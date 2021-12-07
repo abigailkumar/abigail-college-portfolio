@@ -1,0 +1,159 @@
+
+#navbar {
+  z-index: 500;
+  height: 70px;
+  width: 100%;
+  animation: fade-in .75s linear, expand-down .25s linear;
+  position: fixed;
+}
+
+#navbar-black {
+  z-index: 500;
+  height: 70px;
+  width: 100%;
+  animation: fade-in .75s linear, expand-down .25s linear;
+  position: fixed;
+  background-color: black;
+}
+
+nav {
+  margin-top: 25px;
+  width: 95%;
+  text-align: right;
+}
+
+.navlink {
+  color: #aaa;
+  text-decoration: none;
+  font-family: 'Muli', "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: .925em;
+  padding: 0 2%;
+}
+
+#top {
+  border: none;
+  background-color: transparent;
+}
+
+#top:focus {
+  outline: none;
+}
+
+.navlink:hover {
+  animation: color-change .25s ease-in;
+  color: #07918a;
+
+}
+
+#name {
+  font-size: 1em;
+  margin-top: 15px;
+  text-align: left;
+  color: white;
+  text-decoration: none;
+  font-family: 'Muli', "Helvetica Neue", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1em;
+  position: absolute;
+  margin-left: 1vh;
+}
+
+@keyframes fade-in {
+  from{
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes color-change {
+  from{
+    color: #aaa;
+  }
+  to {
+    color: #07918a;
+  }
+}
+
+@keyframes expand-down {
+  from {
+    height: 0%;
+  }
+  to {
+    height: 5vh;
+  }
+}
+
+
+/*FOR MOBILE________________________________*/
+
+#ham-menu {
+  z-index: 5;
+  width: 100%;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin: 4.5vh 0 0 -4vw;
+}
+
+.bar {
+  width: 20px;
+  height: 2.5px;
+  border-radius: 5px;
+  margin: 6px;
+  background-color: #aaa;
+}
+
+#m-menu {
+  width: 100vw;
+  height: 100vh;
+  z-index: 3;
+  position: fixed;
+  background: #07918a;
+}
+
+#m-navbar {
+  display: flex;
+  flex-direction: column;
+  position:absolute;
+  top:50%;
+  height:10em;
+
+  margin-top:-6em
+
+}
+
+#m-navbar a{
+  font-size: 2em;
+  margin: 3vh 0;
+  color: white;
+  text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*________________________________________*/
